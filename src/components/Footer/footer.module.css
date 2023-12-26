@@ -1,0 +1,232 @@
+.footer {
+    color: black;
+    width: 100%;
+    height: 525px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(200px);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.main_container{
+    max-width: 1380px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.text_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 70%;
+}
+
+.upper_text{
+    width: 435px;
+    color: #000;
+    font-family: SF Pro, sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.lower_text{
+    width: 435px;
+    color: #7E7E7E;
+    font-family: SF Pro, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 510;
+    line-height: normal;
+}
+
+.contacts{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.email_text{
+    color: #1F1F1F;
+    font-family: SF Pro, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 590;
+    line-height: normal;
+}
+
+.number_text{
+    color: #1F1F1F;
+    font-family: SF Pro, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 590;
+    line-height: normal;
+    margin-bottom: 4px;
+}
+
+.email{
+    color: #1F1F1F;
+    font-family: SF Pro, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 510;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.number{
+    color: #1F1F1F;
+    font-family: SF Pro, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 510;
+    line-height: normal;
+    margin-bottom: 4px;
+}
+
+.obrabotka_data {
+    margin-top: 32px;
+    color: black;
+    font-size: 16px;
+    font-weight: 510;
+    text-decoration: underline;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+
+.text_popusk {
+    font-family: SF Pro, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 510;
+    line-height: normal;
+    font-variant: small-caps;
+    z-index: 1;
+}
+
+.main_container:last-child{
+    align-items: center;
+}
+
+
+@media (max-width: 1580px) {
+    .footer {
+        height: 700px;
+    }
+
+    .main_container {
+        max-width: 690px;
+    }
+
+    .contacts{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    
+    .contacts > :nth-child(2){
+        padding-left: 70px;
+        padding-bottom: 20px;
+    }
+
+    .contacts > :nth-child(4){
+        padding-left: 70px;
+    }
+    
+
+    .email_text{
+        font-size: 24px;
+    }
+
+    .number_text{
+        font-size: 24px;
+    }
+
+    .email {
+        font-size: 16px;
+    }
+
+    .number {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        height: 480px;
+    }
+
+    .main_container {
+        max-width: 350px;
+    }
+
+    .contacts > :nth-child(2){
+        padding-left: 8px;
+    }
+
+    .contacts > :nth-child(4){
+        padding-left: 8px;
+    }
+    
+    .upper_text {
+        color: black;
+        font-size: 24px;
+        font-weight: 700;
+        word-wrap: break-word
+    }
+
+    .lower_text {
+        color: #7E7E7E;
+        font-size: 16px;
+        font-weight: 510;
+        word-wrap: break-word;
+        max-width: 280px;
+    }
+
+    .email_text{
+        font-size: 18px;
+    }
+
+    .number_text{
+        font-size: 18px;
+    }
+
+    .email {
+        font-size: 14px;
+    }
+
+    .number {
+        font-size: 14px;
+    }
+
+    .obrabotka_data {
+        margin-top: 20px;
+        color: black;
+        font-size: 10px;
+        font-weight: 510;
+        text-decoration: underline;
+        word-wrap: break-word;
+        max-width: 150px;
+        text-align: center;
+    }
+    
+    .text_popusk {
+        color: black;
+        font-size: 10px;
+        font-weight: 510;
+        word-wrap: break-word;
+        text-align: center;
+    }
+}

@@ -1,0 +1,252 @@
+/* from home comp */
+.home_product_hr {
+    height: 1px;
+    background-color: #929292;
+    margin: 0;
+    border-color: rgb(0, 0, 0, 0);
+}
+
+.home_product_big_text {
+    margin-top: 35px;
+    margin-bottom: 142px;
+    color: #1F1F1F;
+    font-size: 54px;
+    font-weight: 510;
+    letter-spacing: 2.56px;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+@media (max-width: 1440px) {
+    .home_product_hr {
+        margin-left: 13px;
+        margin-right: 13px;
+    }
+    .home_product_big_text {
+        margin-left: 61px;
+        font-size: 42px;
+        margin-bottom: 72px;
+    }
+}
+@media (max-width: 768px) {
+    .home_product_big_text {
+        margin-top: 24px;
+        color: #1F1F1F;
+        font-size: 22px;
+        font-weight: 510;
+        letter-spacing: 0.96px;
+        word-wrap: break-word
+    }
+}
+
+
+/* Анімація чогось не ворк, я думаю діло в модулях */
+/*
+.animate {
+    opacity: 1;
+    animation: ani 0s ease-in;
+}
+
+@keyframes ani {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+*/
+
+.container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    padding-top: 130px;
+    padding-bottom: 50px;
+}
+
+.blur_bg {
+    backdrop-filter: blur(50px);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 4;
+}
+
+
+.basket_content {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 940px;
+    max-height: 100%;
+    flex-shrink: 0;
+    border-radius: 36px 36px 36px 36px;
+    background: rgba(255, 255, 255, 0.50);
+}
+
+.basket_content_title {
+    width: 100%;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 36px 36px 0 0;
+    background: #FFF;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.03);
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 7px;
+}
+
+.basket_content_title > div {
+    margin-left: 45px;
+    color: #1F1F1F;
+    font-size: 36px;
+    font-weight: 510;
+    word-wrap: break-word;
+    font-variant: small-caps;
+}
+
+.spase_for_products {
+    width: 100%;
+    max-height: calc(100vh - 350px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    padding: 4px 0;
+    overflow: auto;
+}
+
+/* .total {
+    width: 100%;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 36px;
+    background: #FFF;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.03);
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 66px;
+    padding-right: 56px;
+}
+
+.total_text{
+    color: #1F1F1F;
+    
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 510;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.total_count{
+    color: #4DC130;
+    
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 510;
+    line-height: normal;
+    text-transform: capitalize;
+} */
+
+.basket_button {
+    width: 100%;
+    height: auto;
+    border-radius: 36px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    background: #C8F2FF;
+    text-align: center;
+    color: #1F1F1F;
+    font-size: 40px;
+    font-weight: 510;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1440px) {
+    .container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .spase_for_products {
+        height: auto
+    }
+
+}
+
+
+.one_product_container{
+    justify-content: space-between;
+    display: flex;
+    width: calc(100% - 90px);
+    height: max-content;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    background: #FFF;
+}
+
+.text_ab {
+    width: 100%;
+    color: #1F1F1F;
+    font-size: 24px;
+    font-weight: 400;
+    word-wrap: break-word
+}
+
+@media (max-width: 724px) {
+    .container {
+        padding-top: 90px;
+    }
+
+    .basket_content {
+        border-radius: 20px 20px 36px 36px;
+    }
+    
+    .basket_content_title{
+        border-radius: 20px 20px 0 0;
+    }
+
+    .basket_content_title > div {
+        margin-left: 30px;
+        color: #1F1F1F;
+        font-size: 16px;
+        font-weight: 510;
+        word-wrap: break-word
+    }
+
+    .basket_button {
+        margin-top: 7px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        color: #1F1F1F;
+        font-size: 16px;
+        font-weight: 510;
+        word-wrap: break-word
+    }
+
+    .spase_for_products {
+        max-height: calc(100vh - 242px);
+        row-gap: 2px;
+    }
+    
+    .text_ab {
+        color: #1F1F1F;
+        font-size: 16px;
+        font-weight: 400;
+        word-wrap: break-word
+    }
+}

@@ -1,0 +1,17 @@
+.color_item {
+    height: 58px;
+    width: 58px;
+    margin-right: 13px;
+    margin-bottom: 21px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 724px) {
+    .color_item {
+        height: 38px;
+        width: 38px;
+        margin-right: 8px;
+        margin-bottom: 14px;
+    }
+}

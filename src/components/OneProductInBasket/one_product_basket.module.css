@@ -1,0 +1,67 @@
+.one_product_container{
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    background: #FFF;
+}
+
+.one {
+    display: flex;
+    align-items: center;
+    color: #1F1F1F;
+    font-size: 20px;
+    font-weight: 510;
+    white-space: nowrap; /* Запобігає переносу тексту на новий рядок */
+    overflow: hidden; /* Ховає текст, який не вміщується в блок */
+    text-overflow: ellipsis; /* Додає "..." до тексту, який виходить за межі блоку */
+    width: 14ch;
+    margin-left: 66px;
+}
+
+.two {
+    display: flex;
+    align-items: center;
+    color: #1F1F1F;
+    font-size: 15px;
+    font-weight: 510;
+    margin-left: 40px;
+}
+
+.three {
+    display: flex;
+    align-items: center;
+    color: #4DC130;
+    font-size: 15px;
+    font-weight: 510;
+    margin-left: 20px;
+}
+
+.four {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+
+@media (max-width: 1440px) {
+    
+}
+
+@media (max-width: 768px) {
+    .one{
+        margin-left: 30px;
+        font-size: 14px;
+    }
+    .two {
+        font-size: 14px;
+        width: max-content;
+        margin-left: 12px;
+    }
+    .three {
+        font-size: 14px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}

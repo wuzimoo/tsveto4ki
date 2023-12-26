@@ -1,0 +1,213 @@
+.basket_container_open{
+    position: absolute;
+    top: 26px;
+    right: 6px;
+    display: flex;
+    width: 467px;
+    height: 464px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 36px;
+    background: rgba(255, 233, 246, 0.55);
+    backdrop-filter: blur(50px);
+    box-sizing: border-box;
+    transition: 0.8s;
+    z-index: 4;
+}
+.basket_container_close{
+    position: absolute;
+    top: 26px;
+    right: -487px;
+    display: flex;
+    width: 467px;
+    height: 464px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 36px;
+    background: rgba(255, 233, 246, 0.55);
+    backdrop-filter: blur(50px);
+    box-sizing: border-box;
+    transition: 0.8s;
+    z-index: 2;
+}
+
+.basket_content {
+    width: 100%;
+    height: 381px;
+    flex-shrink: 0;
+    border-radius: 36px 36px 20px 20px;
+    background: rgba(255, 255, 255, 0.50);
+}
+.basket_content_title {
+    width: 100%;
+    height: 72px;
+    flex-shrink: 0;
+    border-radius: 36px 36px 0 0;
+    background: #FFF;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.03);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.basket_content_title > div {
+    color: #1F1F1F;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 510;
+    line-height: normal;
+    font-variant: small-caps;
+}
+
+.korzina {
+    fill: #FFF;
+    box-sizing: border-box;
+    width: 70px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: #FFF;
+    cursor: pointer;
+    margin-left: 120px;
+    margin-right: 10px;
+}
+
+.spase_for_products {
+    width: 100%;
+    height: 270px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    padding: 4px 0;
+    overflow: auto;
+}
+
+.total {
+    width: 100%;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 36px;
+    background: #FFF;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.03);
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 66px;
+    padding-right: 56px;
+}
+
+.total_text{
+    color: #1F1F1F;
+    
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 510;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.total_count{
+    color: #4DC130;
+    
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 510;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.basket_button {
+    display: flex;
+    width: 100%;
+    height: 72px;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 36px;
+    background: #FFF;
+    cursor: pointer;
+}
+
+.basket_button > div {
+    color: #1F1F1F;
+    
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 510;
+    line-height: normal;
+    font-variant: small-caps;
+    margin-left: 53px;
+}
+
+@media (max-width: 1500px) {
+    .basket_container_open{
+        top: 18px;
+        right: 4px;
+    }
+    .basket_container_close {
+        top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .basket_container_open{
+        width: 269px;
+        height: max-content;
+        top: 18px;
+        right: 4px;
+    }
+    .basket_container_close {
+        width: 269px;
+        height: max-content;
+        top: 20px;
+    }
+    .spase_for_products {
+        height: 305px;
+    }
+    .basket_content_title {
+        height: 50px;
+    }
+    .basket_content_title > div {
+        font-size: 16px;
+    }
+    .basket_button {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        height: max-content;
+    }
+    .basket_button > div {
+        font-size: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .total{
+        padding-left: 30px;
+        padding-right: 30px;
+        height: 30px;
+    }
+    .total_text{
+        font-size: 14px;
+    }
+    .total_count{
+        font-size: 14px;
+    }
+    .korzina {
+        height: 39px;
+        width: 39px;
+        margin-left: 70px;
+    }
+
+    .korzina > svg {
+        height: 39px;
+        width: 39px;
+    }
+}

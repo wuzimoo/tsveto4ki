@@ -1,0 +1,14 @@
+.color_select_text {
+    color: #1F1F1F;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: capitalize;
+    word-wrap: break-word
+}
+
+.color_select_items_container {
+    margin-top: 18px;
+    display: grid;
+    max-width: max-content;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+}

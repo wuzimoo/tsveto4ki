@@ -1,0 +1,73 @@
+/* font */
+/*
+@font-face {
+  font-family: 'SF Pro';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url('./SF-Pro.ttf') format('truetype');
+}
+*/
+
+@font-face {
+  font-family: 'Inter var';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url('./Inter-roman.var.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Inter var';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: italic;
+  font-named-instance: 'Italic';
+  src: url('./Inter-italic.var.woff2') format('woff2');
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'Inter var', sans-serif;
+}
+
+/* Для всіх браузерів, крім Firefox */
+/* Поки що Firefox не підтримує це правило */
+/* Ви можете використовувати @-moz-document для Firefox */
+
+/* Задаємо кастомний фон скролбара */
+::-webkit-scrollbar {
+  width: 8px; /* Ширина скролбара */
+}
+
+/* Задаємо колір скролбара */
+::-webkit-scrollbar-thumb {
+  background-color: #bebebe; /* Колір самого скролбара */
+  border-radius: 6px; /* Закруглені кути скролбара */
+}
+
+/* Задаємо колір фону скролбара (позаду скролбара) */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Колір фону скролбара */
+}
+
+/* Задаємо колір та ширину рамки скролбара при наведенні */
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.23); /* Колір при наведенні */
+}
+
+/* Задаємо колір та ширину рамки фону скролбара при наведенні */
+::-webkit-scrollbar-track:hover {
+  background-color: #ddd; /* Колір фону при наведенні */
+}
+
+/* Задаємо колір та ширину рамки скролбара при активному скролі */
+::-webkit-scrollbar-thumb:active {
+  background-color: rgba(0, 0, 0, 0.23); /* Колір при активному скролі */
+}
+
+

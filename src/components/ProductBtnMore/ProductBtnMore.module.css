@@ -1,0 +1,33 @@
+.container_more_btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.product_more_btn {
+    max-width: max-content;
+    margin-top: 42px;
+    border-radius: 50px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 79px;
+    padding-right: 79px;
+    background: linear-gradient(91deg, #FFC8C8 0%, #FF71C5 100%);
+    text-align: center;
+    color: #0E0E0E;
+    font-size: 24px;
+    font-weight: 590;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .product_more_btn {
+        margin-top: 20px;
+        padding-left: 29px;
+        padding-right: 29px;
+        color: #0E0E0E;
+        font-size: 16px;
+        font-weight: 590;
+        word-wrap: break-word
+    }
+}

@@ -1,0 +1,41 @@
+.scroll_btns_main {
+    display: flex;
+    justify-content: space-between;
+    max-height: 54.8px;
+}
+
+.scroll_btn_scroll {
+    display: flex;
+    /* overflow: scroll; */
+    overflow: hidden;
+    width: max-content;
+}
+
+.scroll_btns_flex {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    max-height: 54.8px;
+}
+
+.scroll_btns_btn {
+    padding-left: 47px;
+    padding-right: 47px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    margin-right: 10px;
+    background-color: white;
+    border-radius: 50px;
+    color: #1F1F1F;
+    font-size: 24px;
+    font-weight: 510;
+    text-transform: capitalize;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+
+.scroll_arrow {
+    height: 100%;
+    align-items: center;
+    margin-left: 15px
+}
